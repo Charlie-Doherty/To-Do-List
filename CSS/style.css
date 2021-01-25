@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #dbdbdb;
+}
+
+header{
+    font-size: 1.4rem;
+    background-color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2em 0.5em;
+}
+
+form input, form button{
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    font-size: 2rem;
+    background-color: #fff;
+}
+
+form input{
+    font-size: 1.6rem;
+    width: 18em;
+}
+
+form button{
+    color: #0984e3;
+    cursor: pointer;
+    transition: 300ms color ease-in-out;
+}
+
+form button:hover{
+    color: #0050c9;
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2em;
+}
+
+.task-list{
+    width: 40em;
+    list-style-type: none;
+}
+
+.task{
+    padding: 0.2em;
+    margin: 0.5em;
+    background-color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: 500ms opacity linear;
+}
+
+.task:hover .trash{
+    opacity: 1;
+}
+
+.trash, .check{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 300ms color ease-in-out;
+}
+
+.trash{
+    opacity: 0;
+    color: #e62a2a;
+    transition: 300ms opacity linear;
+}
+
+.check{
+    padding: 0.46em;
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.active{
+    color: #00ff22;
+}
+
+.task-item{
+    padding: 0.2em 0.5em;
+    line-height: 1.5;
+    flex: 1;
+    align-self: center;
+}
+
+.fa-trash, .fa-check-circle, .fa-circle{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.fade{
+    opacity: 0;
+}
+
+@media (max-width:786px){
+    .trash{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        font-size: 1.2rem;
+        padding: 1.3em 0;
+    }
+
+    .task{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        font-size: 1rem;
+    }
+    form button{
+        padding: 0.3em;
+    }
+
+    form input{
+        padding: 0.3em 0.5em;
+        font-size: 1.2rem;
+        width: 15em;
+        max-width: 90%;
+    }
+
+    form button{
+        font-size: 1.8rem;
+    }
+    
+    .task{
+        font-size: 1rem;
+    }
+}

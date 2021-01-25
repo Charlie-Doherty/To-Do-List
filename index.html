@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+
+    <form>
+        <input type="text" placeholder="Enter a task" class="task-input">
+        <button type="submit" class="task-submit"><i class="fas fa-plus-square"></i></button>
+     </form>
+
+    <div class="task-container">
+        <ul class="task-list">
+            <div class="task">
+                <button class="check"><i class="far fa-circle"></i></button>
+                <li class="task-item">Go Shopping</li>
+                <button class="trash"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="task">
+                <button class="check"><i class="far fa-circle"></i></button>
+                <li class="task-item">Buy food</li>
+                <button class="trash"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="task">
+                <button class="check"><i class="far fa-circle"></i></button>
+                <li class="task-item">Go to work</li>
+                <button class="trash"><i class="fas fa-trash"></i></button>
+            </div>
+        </ul>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
