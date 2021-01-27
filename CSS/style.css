@@ -94,10 +94,6 @@ form button:hover{
     color: #888;
 }
 
-.active{
-    color: #00ff22;
-}
-
 .task-item{
     padding: 0.2em 0.5em;
     line-height: 1.5;
@@ -112,6 +108,10 @@ form button:hover{
 .completed{
     text-decoration: line-through;
     color: #888;
+}
+
+.completed .check{
+    color: #00ff22;
 }
 
 .fade{

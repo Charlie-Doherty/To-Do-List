@@ -40,9 +40,7 @@ function deleteTask(e){
     if(item.classList.contains('trash')){
         const task = item.parentElement;
         task.classList.add('fade');
-        task.addEventListener('transitionend', () =>{
-            task.remove();
-        });
+        task.addEventListener('transitionend', () => task.remove());
     }
 }
 
@@ -54,13 +52,7 @@ function completeTask(e){
 
         task.classList.toggle('completed');
 
-        if(task.classList.contains('completed')){
-            item.innerHTML = '<i class="fas fa-check-circle"></i>';
-            item.classList.add('active');
-        }
-        else{
-            item.innerHTML = '<i class="far fa-circle"></i>';
-            item.classList.remove('active');
-        }
+        task.classList.contains('completed') ? 
+        item.innerHTML = '<i class="fas fa-check-circle"></i>' : item.innerHTML = '<i class="far fa-circle"></i>';
     }
 }
